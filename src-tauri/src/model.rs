@@ -1,11 +1,12 @@
-pub type DeckId = i32;
+pub type DeckId = i64;
+
 pub struct Deck {
-    id: DeckId,
-    name: String,
-    card_count: u32,
+    pub id: DeckId,
+    pub name: String,
+    pub card_count: i32,
 }
 
 pub struct Card {
-    english: String,
-    korean: String,
+    pub english: String,
+    pub korean: String,
 }

@@ -1,8 +1,8 @@
 CREATE TABLE decks (
-    id   INTEGER PRIMARY KEY AUTOINCREMENT,
+    id              INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     name_display    TEXT NOT NULL,
     -- Names can be in English or Korean so we should support both
-    name_decomposed TEXT NOT NULL,
+    name_decomposed TEXT NOT NULL
 );
 
 CREATE INDEX decks_name_search ON decks(name_decomposed);
